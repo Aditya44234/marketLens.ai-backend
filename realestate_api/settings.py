@@ -26,7 +26,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "your-app-name.onrender.com"  # Replace with actual name after deploy!
+    "https://marketlens-ai-backend.onrender.com"  
 ]
 
 # CORS allowed origins so the frontend can connect
