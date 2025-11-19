@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+static/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+
+# VS Code workspace settings
+.vscode/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+
+# Render/Heroku
+*.sqlite3
+instance/
+.webassets-cache
+
+# Test coverage
+htmlcov/
+coverage.xml
+*.cover
+*.coverage
+.coverage.*
+.cache
+
+# Python-pytest
+.cache/
+.pytest_cache/
