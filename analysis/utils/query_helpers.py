@@ -57,19 +57,19 @@ def build_prompt(user_query, filtered_df, analysis_type, locations, years):
             f"User question: {user_query}\n"
             f"Here is the relevant real estate data for comparison:\n"
             f"{prompt_df.to_string(index=False)}\n"
-            "Compare the demand/sales trends between the two places and return a summary for a real estate stakeholder.Respond in concise and correct way , short summary about 1 para of 4-6 lines"
+            "Compare the demand/sales trends between the two places and return a summary for a real estate stakeholder.Respond in concise and correct way , short summary about of  para of 4-6 lines"
         )
     elif analysis_type == "growth":
         return (
             f"User question: {user_query}\n"
             f"Here is the price data for {locations[0].title()} over the last {years} years:\n"
             f"{prompt_df.to_string(index=False)}\n"
-            "Give insights on price growth and trend over this recent period for a stakeholder.Respond in concise and correct way , short summary about 1 para of 4-6 lines "
+            "Give insights on price growth and trend over this recent period for a stakeholder.Respond in concise and correct way , short summary of 1 para of 4-6 lines "
         )
     else:
         return (
             f"User question: {user_query}\n"
             f"Here is the relevant real estate data for {locations[0].title()}:\n"
             f"{prompt_df.to_string(index=False)}\n"
-            "Please analyze the market trends and return a concise summary for a real estate stakeholder.Respond in concise and correct way , short summary about 1 para of 4-6 lines"
+            "Please analyze the market trends and return a concise summary for a real estate stakeholder.Respond in concise and correct way , short summary about of para of 4-6 lines"
         )
