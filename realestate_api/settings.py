@@ -26,7 +26,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "https://marketlens-ai-backend.onrender.com"  
+    "marketlens-ai-backend.onrender.com"  
 ]
 
 # CORS allowed origins so the frontend can connect
